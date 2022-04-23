@@ -2,6 +2,7 @@ import React from "react";
 import cn from "classnames";
 import styles from "./Box.module.sass";
 
+// basic container for React content
 const Box = ({
   className,
   title,

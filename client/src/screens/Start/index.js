@@ -4,6 +4,8 @@ import cn from "classnames";
 import styles from "./Start.module.sass";
 import Box from "../../components/Box";
 
+
+//Starting app for React
 const Start = ({className}) => {
   const [data, setData] = React.useState(null);
 
