@@ -2,6 +2,12 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## First step
+
+To init node_modules folder, wchich is required for project, enter comand.
+
+### `npm install`
+
 ## Available Scripts
 
 In the project directory, you can run:

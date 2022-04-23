@@ -19,7 +19,7 @@ const Start = ({className}) => {
     >
       <header className={cn(styles.header, className)} >
         <img src={logo} className={cn(styles.logo, className)} alt="logo" />
-        <p>{!data ? "Loading..." : data}</p>
+        <p>{!data ? "Server does not respons..." : data}</p>
       </header>
     </Box>
   );
