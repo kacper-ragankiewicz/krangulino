@@ -1,9 +1,20 @@
 const path = require('path');
 const express = require('express');
-const PORT = process.env.PORT || 3001;
 const app = express();
+const bodyParser = require('body-parser');
+const { json, response } = require('express');
+const { Pool } = require('pg');
+const { pool } = require('./config/db');
 
+const PORT = process.env.PORT || 3001;
 
+app.use(bodyParser/json())
+
+app.use(
+  bodyParser.urlencoded({
+    extended: true,
+  })
+)
 
 // Handle GET requests to /api route
 app.get("/api", (req, res) => {
