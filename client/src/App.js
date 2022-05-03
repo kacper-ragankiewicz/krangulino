@@ -1,5 +1,5 @@
 import "./styles/app.sass";
-import Start from "./screens/Start";
+// import Start from "./screens/Start";
 import Form from "./components/Form";
 import React from "react";
 

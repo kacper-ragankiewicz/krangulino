@@ -1,10 +1,12 @@
 import React from "react";
 import styles from "./Form.module.sass";
 
+
 class Form extends React.Component {
 
     constructor(props) {
         super(props);
+
         this.state = {
             firstName: '',
             lastName: '',
@@ -27,16 +29,16 @@ class Form extends React.Component {
 
     render() {
         const { firstName, lastName } = this.state;
-        const values = [
-            firstName,
-            lastName
-        ];
+        // const values = [
+        //     firstName,
+        //     lastName
+        // ];
 
-        const valuesList = values.map(item => {
-            return (
-                <li>{item}</li>
-            );
-        })
+        // const valuesList = values.map(item => {
+        //     return (
+        //         <li>{item}</li>
+        //     );
+        // })
         return (
             <div className={styles.container}>
                 <h1>Sample</h1>
