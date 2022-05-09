@@ -6,19 +6,10 @@ const { pool } = require('./config/dbConfig');
 const PORT = process.env.PORT || 3001;
 
 app.use(express.urlencoded({extended: false}));
-app.use(express.static('../client/build'))
 
-app.get('/', (req,res) => {
-})
 
-app.post('/user/register', (req,res) => {
-  let [name, email, password] = req.body;
-
-  console.log(
-    name,
-    email,
-    password
-  )
+app.get('/api', (req,res) => {
+  res.json({message: 'Hello World!'})
 })
 
 app.listen(PORT, ()=> {
