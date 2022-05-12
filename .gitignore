@@ -1,5 +1,5 @@
 node_modules
-server/yarn.lock
+api/yarn.lock
 client/yarn.lock
 .env
 
